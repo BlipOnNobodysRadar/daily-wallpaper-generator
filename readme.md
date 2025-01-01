@@ -28,7 +28,7 @@ OPENAI_API_KEY=your-api-key-here
 To generate a new wallpaper manually, open a terminal in the project folder and run:
 
 ```bash
-node index.js
+node generate-wallpaper.mjs
 ```
 
 ## Setting Up Automatic Daily Runs
@@ -42,7 +42,7 @@ node index.js
 5. Choose your preferred time and click Next
 6. Select "Start a program" and click Next
 7. In "Program/script" enter: `node`
-8. In "Add arguments" enter the full path to your index.js file
+8. In "Add arguments" enter the full path to your generate-wallpaper.mjs file
 9. In "Start in" enter the full path to your project folder
 10. Click Next and then Finish
 
@@ -51,7 +51,7 @@ node index.js
 1. Open terminal and type `crontab -e`
 2. Add this line (replace paths with your actual paths):
 ```bash
-0 9 * * * cd /path/to/project && /usr/bin/node index.js
+0 9 * * * cd /path/to/project && /usr/bin/node generate-wallpaper.mjs
 ```
 3. This will run it daily at 9 AM. Adjust the time as needed.
 4. Save and exit
